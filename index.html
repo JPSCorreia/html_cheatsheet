@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <script>
+    const copiar = (str,buttonNum) => {
+      const el = document.createElement('textarea');
+      el.value = str;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+      document.getElementById(buttonNum).innerHTML = "Copied!"
+};
+  </script>
+
+<!-- HTML / CSS Cheatsheet -->
+  <head>
+    <title> HTML/CSS Cheatsheet</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+
+
+
+
+
+    <h1>HTML Cheatsheet</h1>
+    <hr>
+
+    <section>
+      <br>
+      <br>
+      <br>
+      <h2>HTML Semantics</h2>
+      <table>
+        <thead>
+          <tr>
+             <th>Tag</th>
+             <th>Name</th>
+             <th>Description</th>
+             <th>To Clipboard</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>&ltheader&gt</td>
+              <td>Header Element</td>
+              <td>Represents a container for introductory content or a set of navigational links.&nbsp&nbsp</td> 
+              <td><button id="tr_button1" onclick="copiar('<header></header>','tr_button1')">Copy Tag</button></td>
+          </tr>
+          <tr>         
+              <td>&ltnav&gt</td>
+              <td>Nav Element</td>
+              <td>Defines a set of navigation links.</td>
+              <td><button id="tr_button2" onclick="copiar('<nav></nav>','tr_button2')">Copy Tag</button></td>           
+          </tr> 
+          <tr>
+              <td>&ltsection&gt</td>
+              <td>Section Element</td>
+              <td>Defines a section in a document.</td>
+              <td><button id="tr_button3" onclick="copiar('<section></section>','tr_button3')">Copy Tag</button></td>
+          </tr>
+          <tr>
+              <td>&ltarticle&gt</td>
+              <td>Article Element</td>
+              <td>Specifies independent, self-contained content.</td>
+              <td><button id="tr_button4" onclick="copiar('<article></article>','tr_button4')">Copy Tag</button></td>
+          </tr>
+          <tr>          
+                <td>&ltaside&gt</td>
+                <td>Aside Element</td>
+                <td>Defines some content aside from the content it is placed in (like a sidebar).</td>
+                <td><button id="tr_button5" onclick="copiar('<aside></aside>','tr_button5')">Copy Tag</button></td>        
+          </tr>
+          <tr>
+            <td>&ltfooter&gt</td>
+            <td>Footer Element</td>
+            <td>Defines a footer for a document or section.</td>
+            <td><button id="tr_button6" onclick="copiar('<footer></footer>','tr_button6')">Copy Tag</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <br>
+      <br>
+      <br>
+      <h2>HTML Tables</h2>
+      <table>
+        <thead>
+          <tr>
+             <th>Tag</th>
+             <th>Name</th>
+             <th>Description</th>
+             <th>To Clipboard</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>&lttable&gt</td>
+              <td>Table Element</td>
+              <td>Defines an HTML table element.</td> 
+              <td><button id="tr_button7" onclick="copiar('<table></table>','tr_button7')">Copy Tag</button></td>
+          </tr>
+          <tr>         
+              <td>&ltthead&gt</td>
+              <td>THead Element</td>
+              <td>Defines a group for header elements. Used in conjunction with &lttbody&gt, &lttfooter&gt.</td>
+              <td><button id="tr_button8" onclick="copiar('<thead></thead>','tr_button8')">Copy Tag</button></td>           
+          </tr> 
+          <tr>
+              <td>&lttbody&gt</td>
+              <td>TBody Element</td>
+              <td>Defines a group for body elements.Used in conjunction with &ltthead&gt, &lttfooter&gt.</td>
+              <td><button id="tr_button9" onclick="copiar('<tbody></tbody>','tr_button9')">Copy Tag</button></td>
+          </tr>
+          <tr>
+              <td>&ltth&gt</td>
+              <td>Th Element</td>
+              <td>Defines a table heading element.</td>
+              <td><button id="tr_button10" onclick="copiar('<th></th>','tr_button10')">Copy Tag</button></td>
+          </tr>
+          <tr>          
+                <td>&lttr&gt</td>
+                <td>Tr Element</td>
+                <td>Defines a table row element.</td>
+                <td><button id="tr_button11" onclick="copiar('<tr></tr>','tr_button11')">Copy Tag</button></td>        
+          </tr>
+          <tr>
+            <td>&lttd&gt</td>
+            <td>Td Element</td>
+            <td>Defines a table data element.</td>
+            <td><button id="tr_button12" onclick="copiar('<td></td>','tr_button12')">Copy Tag</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </body>
+
+    </html>

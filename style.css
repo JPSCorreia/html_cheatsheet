@@ -1,0 +1,81 @@
+body {
+    
+    text-align: center;
+    background: rgb(191,188,242);
+    background: linear-gradient(90deg, rgba(191,188,242,1) 0%, rgba(242,252,205,1) 100%, rgba(240,237,137,1) 100%);
+    font-family: Helvetica;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 50px
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 35px
+}
+
+
+
+table {
+    border: 1px solid navy;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    background-color: rgb(255, 239, 213);
+    
+    width: 60%;
+  }
+
+  td, th {
+    border: 2px solid navy;
+
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+
+  thead {
+      font-weight: bold;
+      font-size: 20px;
+      background-color: teal;
+      text-align: center;
+      color: white;
+      padding-top: 3px;
+      padding-bottom: 3px;
+  }
+
+  tr:nth-child(even) {
+    background-color:rgb(215, 199, 173);
+  }
+
+  td:nth-child(1) {  
+    background-color: rgba(87, 240, 240, .25);
+    font-weight: bold;
+    font-family: monospace;
+  }
+
+  th:nth-child(4),td:nth-child(4) {  
+    text-align:center;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  tr:nth-child(even) td:nth-child(1) {  
+    background-color: rgb(7, 160, 160, .25);
+    font-weight: bold;
+  }
+
+  tbody tr:hover {
+    background-color: rgb(200, 200, 200) !important;
+}
+ 
+button {
+    color: green;
+    font-size: 14px;
+    vertical-align: text-bottom;
+    cursor: pointer;
+}
